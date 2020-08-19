@@ -1,0 +1,35 @@
+{
+  "name": "vintik",
+  "version": "1.0.0",
+  "description": "small automobile website",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S11as/vintik.git"
+  },
+  "author": "silas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S11as/vintik/issues"
+  },
+  "homepage": "https://github.com/S11as/vintik#readme",
+  "dependencies": {
+    "animejs": "^3.2.0",
+    "bootstrap": "^4.5.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jquery": "^3.5.1",
+    "mini-css-extract-plugin": "^0.10.0",
+    "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
+    "sass-loader": "^9.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
