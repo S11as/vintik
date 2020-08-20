@@ -22,6 +22,34 @@ if (document.body.clientWidth > 768) {
         opacity: [0, 1],
         duration: 1000,
         easing: "easeOutSine",
+    });
+
+    const sliderTimeline = anime.timeline();
+    sliderTimeline.add({
+        targets: "#slider",
+        translateY: [-100, 0],
+        opacity: [.75, 1],
+        duration: 1000,
+        easing: "easeOutSine",
     })
+        .add({
+            targets: "#slider-caption",
+            translateX: [-350, 0],
+            duration: 1000,
+            easing: "easeOutSine",
+        })
+        .add({
+            targets: "#slider h4",
+            translateY: [-50, 0],
+            duration: 600,
+            easing: "easeOutSine",
+        }, "-=300")
+        .add({
+            targets: "#slider h1",
+            translateY: [50, 0],
+            duration: 600,
+            easing: "easeOutSine",
+        }, "-=600")
+    sliderTimeline.play();
 }
 
