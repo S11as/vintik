@@ -26,8 +26,13 @@ module.exports = {
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
         new HtmlWebpackPlugin({
             filename: "home.html",
-            template: "./src/pages/home/home.html",
-            // chunks: ["main"]
+            template: "./src/pages/home.html",
+            chunks: ["main"]
+        }),
+        new HtmlWebpackPlugin({
+            filename: "contacts.html",
+            template: "./src/pages/contacts.html",
+            chunks: ["main"]
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css'

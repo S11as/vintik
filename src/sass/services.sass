@@ -1,0 +1,43 @@
+@import global
+#services
+  min-height: 400px
+  background-repeat: no-repeat
+  background-size: 100%
+
+.subtitle
+  font-family: 'Oswald', sans-serif
+  font-size: 39px
+  font-weight: bolder
+  letter-spacing: 0
+  margin: 30px 0
+
+.short-subtitle
+  margin:  0
+  @include media-breakpoint-up(lg)
+    margin: 30px 0
+
+.service-box
+  background: $red
+  height: 180px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  padding: 45px 0
+  margin-bottom: 30px
+  margin-right: 15px
+  text-align: center
+  @include media-breakpoint-up(lg)
+    margin-left: 25px
+    margin-bottom: 0
+    margin-right: 0
+
+  i
+    font-size: 50px
+    color: white
+  span
+    color: white
+    font-family: 'Oswald', sans-serif
+    text-transform: uppercase
+    font-size: 17px
+    padding: 15px 0

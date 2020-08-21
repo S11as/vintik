@@ -1,0 +1,56 @@
+@import "global"
+#footer
+  overflow: hidden
+  height: 185px
+  @media (min-width: 600px)
+    height: 200px
+  @media (min-width: 730px)
+    height: 230px
+  @media (min-width: 1000px)
+    height: 270px
+  @media (min-width: 1200px)
+    height: 300px
+  @media (min-width: 1400px)
+    height: 330px
+  @media (min-width: 1600px)
+    height: 370px
+  @media (min-width: 1700px)
+    height: 400px
+  background-size: cover
+  background-repeat: no-repeat
+  & i
+    color: $red
+    padding: 0 5px
+  & a
+    color: $gray
+    transition: 0.3s ease-in-out
+    font-size: 15px
+    &:hover
+      color: $red
+      cursor: pointer
+      text-decoration: none
+.footer-nav
+  border-bottom: 1px solid $dark
+  padding: 5px 0
+
+
+.footer-block
+  padding: 0 35px
+  & .row
+    max-width: 200px
+    margin: 0
+.footer-title
+  font-family: 'Oswald', sans-serif
+  text-transform: uppercase
+  color: white
+  font-size: 20px
+  margin-bottom: 20px
+  padding: 0
+  &::after
+    content: ""
+    background-color: $red
+    width: 100px
+    height: 2px
+    position: absolute
+    left: 0%
+    top: 120%

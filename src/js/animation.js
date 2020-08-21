@@ -34,12 +34,12 @@ if (document.body.clientWidth > 768) {
     })
         .add({
             targets: "#slider-caption",
-            translateX: [-350, 0],
+            translateX: [-400, 0],
             duration: 1000,
             easing: "easeOutSine",
         })
         .add({
-            targets: "#slider h4",
+            targets: "#slider h5",
             translateY: [-50, 0],
             duration: 600,
             easing: "easeOutSine",
