@@ -1,12 +1,19 @@
 import anime from "animejs";
-import $ from "jquery"
 
 const slider = document.getElementById("sliding-image");
 if(slider){
-    const images = [
-        './img/slide1.jpg',
-        './img/slide2.jpg',
-    ]
+    let images;
+    if(typeof wordpress !== 'undefined'){
+        images = [
+            wordpress.templateDir+'/img/slide1.jpg',
+            wordpress.templateDir+'./img/slide2.jpg',
+        ]
+    }else{
+        images = [
+            './img/slide1.jpg',
+            './img/slide2.jpg',
+        ]
+    }
     let currentImage = 0;
     const iconContainer = document.getElementById("icon-container");
 

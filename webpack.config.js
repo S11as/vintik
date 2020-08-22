@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const path = require('path');
 
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
@@ -36,6 +38,11 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css'
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
     ]
 }

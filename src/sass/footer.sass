@@ -18,6 +18,7 @@
     height: 400px
   background-size: cover
   background-repeat: no-repeat
+
   & i
     color: $red
     padding: 0 5px
@@ -25,20 +26,27 @@
     color: $gray
     transition: 0.3s ease-in-out
     font-size: 15px
+    text-align: center
     &:hover
       color: $red
       cursor: pointer
       text-decoration: none
+
 .footer-nav
   border-bottom: 1px solid $dark
   padding: 5px 0
 
 
 .footer-block
-  padding: 0 35px
+  padding: 0 25px
+
   & .row
     max-width: 200px
     margin: 0
+
+  @include media-breakpoint-up(md)
+    padding: 0 35px
+
 .footer-title
   font-family: 'Oswald', sans-serif
   text-transform: uppercase
@@ -46,6 +54,7 @@
   font-size: 20px
   margin-bottom: 20px
   padding: 0
+
   &::after
     content: ""
     background-color: $red

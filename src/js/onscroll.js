@@ -28,7 +28,7 @@ let brandAnimationPlayed = false;
 
 function scrolling(e){
     const advantages = document.getElementById("advantages");
-    if(isPartiallyVisible(advantages) && !advantagesAnimationPlayed){
+    if(advantages && isPartiallyVisible(advantages) && !advantagesAnimationPlayed){
         advantagesAnimationPlayed = true;
         const timeline = anime.timeline();
         timeline.add({
@@ -52,7 +52,7 @@ function scrolling(e){
         timeline.play();
     }
     const services = document.getElementById("services");
-    if(isPartiallyVisible(services) && !servicesAnimationPlayed){
+    if(services && isPartiallyVisible(services) && !servicesAnimationPlayed){
         servicesAnimationPlayed = true;
         const timeline = anime.timeline();
         timeline.add({
@@ -70,13 +70,13 @@ function scrolling(e){
         timeline.play();
     }
     const brand = document.getElementById("brand");
-    if(isPartiallyVisible(brand) && !brandAnimationPlayed){
+    if(brand && isPartiallyVisible(brand) && !brandAnimationPlayed){
         brandAnimationPlayed = true;
         const timeline = anime.timeline();
         timeline.add({
             targets: ".car-logo",
             translateX: [600, 0],
-            duration: 5000,
+            duration: 8000,
             delay: (el, i) =>150 * i
         })
         timeline.play();

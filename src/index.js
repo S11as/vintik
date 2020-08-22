@@ -16,6 +16,7 @@ import "./sass/services.sass"
 import "./sass/brands.sass"
 import "./sass/footer.sass"
 import "./sass/contacts.sass"
+import "./sass/dots.sass"
 
 //images
 import "./img/img.jpg"
@@ -31,8 +32,11 @@ import "./img/suzuki.png"
 import "./img/honda.png"
 import "./img/footerbg.jpg"
 
+
 // animation
 import "./js/animation"
 import "./js/nav-burger"
 import "./js/slider"
 import "./js/onscroll"
+import "./js/carousel"
+
