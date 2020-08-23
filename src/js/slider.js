@@ -6,7 +6,7 @@ if(slider){
     if(typeof wordpress !== 'undefined'){
         images = [
             wordpress.templateDir+'/img/slide1.jpg',
-            wordpress.templateDir+'./img/slide2.jpg',
+            wordpress.templateDir+'/img/slide2.jpg',
         ]
     }else{
         images = [
